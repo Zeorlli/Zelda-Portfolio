@@ -1,0 +1,209 @@
+/*
+Author: Zelda Barber
+File: styles.css
+Date: 09/14/2026
+*/
+
+/*
+CSS Reset
+*/
+
+body, header, nav, main, img, footer, h1, h3 
+{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    }
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 2%;
+}
+
+body { 
+    background-color: #ff618e;
+}
+
+/*style rules for mobile class and hide tab-desk class*/
+.mobile {
+    display:block;
+
+    h1 {
+  font-family: "Emblema One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+h3 {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+}
+
+.tab-desk {
+    display: none;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 4em;
+    text-align: center;
+    color: rgb(24, 114, 45);
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: 1.5em;
+    text-align: center;
+    color: rgb(24, 114, 45);
+}
+
+header {
+margin-bottom: 0em;
+background-color: #79ff9d;
+}
+
+/* main*/
+
+main {
+text-align: center;
+padding: 2%;
+  font-family: "Emblema One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+
+}
+main p {
+    font-size: 1.25em;
+}
+main h3 {
+    padding-top: 2%;
+}
+main ul {
+    list-style-type: square;
+}
+
+/* style rules for navigation area*/
+
+nav, nav ul, nav li, nav li a
+
+nav {
+    background-color: #79ff9d;
+}
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+nav li {
+    border-style: solid;
+   border-color:  #f6eee4;
+   border-width: 0.5px;
+    display: block;
+    font-size: 1.5em;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav li a {
+    display: block;
+    color: rgb(24, 114, 45);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+/* style rules for footer content*/
+
+footer {
+text-align: center;
+font-size: 1em;
+background-color: #79ff9d;
+color: rgb(24, 114, 45);
+padding-top: 1%;
+padding-bottom: 1%;
+padding-left: 0%;
+padding-right: 0%;
+}
+
+footer a {
+    color: rgb(24, 114, 45);
+    text-decoration: none;
+}
+
+/*class and id*/
+
+.mobile {
+    display: block;
+}
+.tab-desk {
+    display: block;
+}
+
+
+/* style rules for mobile class */
+
+/* media query for tablet viewort*/
+
+@media screen and (min-width:1000px), print {
+ 
+    /*desktop viewport: style rules for nav area*/
+    nav li {
+        font-size: 1.5em;
+    }
+    nav li a {
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+nav li a:hover {
+    color: #2a1f14;
+    background-color: #f6eee4;
+}
+/*desktop viewport: style rules for main content*/
+#info ul {
+    margin-left: 5%;
+}
+
+}
+
+@media screen and (min-width:620px), print {
+
+/* tablet viewport: Show tab-desk class, hide mobile class*/
+.tab-desk {
+    display: block;
+}
+.mobile {
+    display: none;
+}
+
+/* Tablet Viewport: Style rules for nav area */
+nav li {
+border-top: none;
+display: inline-block;
+font-size: 1.25em;
+}
+nav li a {
+    padding: 0.5em;
+}
+}
+
+/* media query for large desktop*/
+
+ @media screen and (min-width:1921px) {
+    body {
+        background: linear-gradient(#ff85d0, #ff479a);
+    }
+#wrapper {
+    width: 1920px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+main {
+    background-color: #f6eee4;
+}
+ }
